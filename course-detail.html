@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Masterclass – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+  <nav class="bg-gray-900/90 border-b border-gray-800 py-4 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-indigo-400">SkillVoyager.AI</a>
+      <div class="flex gap-6">
+        <a href="store.html" class="text-gray-400 hover:text-indigo-400">Course Store</a>
+        <a href="my-courses.html" class="text-gray-400 hover:text-indigo-400">My Courses</a>
+        <a href="login.html" class="text-gray-400 hover:text-indigo-400">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <a href="store.html" class="text-indigo-400 hover:underline text-sm mb-6 inline-block">← Back to Store</a>
+
+    <div class="rounded-xl bg-gray-900/50 border border-gray-800 overflow-hidden mb-8">
+      <div class="h-48 bg-gray-800 flex items-center justify-center text-6xl">📘</div>
+      <div class="p-6">
+        <span class="text-xs px-2 py-1 rounded bg-amber-600/20 text-amber-400">Premium</span>
+        <h1 class="text-2xl font-bold mt-3 mb-2">React Masterclass</h1>
+        <p class="text-gray-400 mb-6">Deep dive into React: hooks, context, performance, testing. Build 3 portfolio projects. Includes certificate.</p>
+        <div class="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
+          <span>12 modules</span>
+          <span>~20 hours</span>
+          <span>Certificate</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <p class="text-2xl font-bold text-indigo-400">$49.99</p>
+          <a href="checkout.html?course=react-masterclass" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-lg font-medium transition">Buy Course</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-xl bg-gray-900/50 border border-gray-800 p-6">
+      <h2 class="font-semibold mb-4">Course Modules</h2>
+      <ol class="list-decimal list-inside space-y-2 text-gray-400">
+        <li>Components & JSX</li>
+        <li>Props, State & Events</li>
+        <li>Hooks Deep Dive</li>
+        <li>Context & Reducer</li>
+        <li>Routing with React Router</li>
+        <li>Forms & Validation</li>
+        <li>Testing with Jest & RTL</li>
+        <li>Performance Optimization</li>
+        <li>Project 1: Todo App</li>
+        <li>Project 2: Dashboard</li>
+        <li>Project 3: E-commerce</li>
+        <li>Certificate & Next Steps</li>
+      </ol>
+    </div>
+  </main>
+</body>
+</html>

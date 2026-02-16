@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Assessment Quiz – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+  <nav class="bg-gray-900/90 border-b border-gray-800 py-4 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-indigo-400">SkillVoyager.AI</a>
+      <div class="flex gap-6">
+        <a href="dashboard.html" class="text-gray-400 hover:text-indigo-400">Dashboard</a>
+        <a href="roadmap.html" class="text-gray-400 hover:text-indigo-400">Roadmap</a>
+        <a href="quiz.html" class="text-indigo-400">Quiz</a>
+        <a href="profile.html" class="text-gray-400 hover:text-indigo-400">Profile</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-2xl mx-auto px-4 py-12">
+    <div class="mb-8">
+      <p class="text-indigo-400 text-sm mb-2">AI-Generated Skill Assessment</p>
+      <h1 class="text-2xl font-bold">React Fundamentals Quiz</h1>
+      <p class="text-gray-400 text-sm mt-1">Question 2 of 5</p>
+      <div class="mt-3 h-2 bg-gray-800 rounded-full overflow-hidden"><div class="h-full w-2/5 bg-indigo-600 rounded-full"></div></div>
+    </div>
+
+    <div class="rounded-xl bg-gray-900/50 border border-gray-800 p-8">
+      <p class="text-lg mb-6">What is the correct way to update state in a functional component?</p>
+      <ul class="space-y-3">
+        <li class="p-4 rounded-lg border border-gray-700 hover:border-indigo-500 cursor-pointer transition">this.setState()</li>
+        <li class="p-4 rounded-lg border border-indigo-500 bg-indigo-600/10 cursor-pointer transition">useState() hook</li>
+        <li class="p-4 rounded-lg border border-gray-700 hover:border-indigo-500 cursor-pointer transition">setState() directly</li>
+        <li class="p-4 rounded-lg border border-gray-700 hover:border-indigo-500 cursor-pointer transition">state = newValue</li>
+      </ul>
+      <div class="flex justify-between mt-8">
+        <button class="px-4 py-2 text-gray-400 hover:text-gray-200">← Previous</button>
+        <button class="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg font-medium">Next →</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

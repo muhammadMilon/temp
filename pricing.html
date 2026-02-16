@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Plans – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+  <nav class="bg-gray-900/90 border-b border-gray-800 py-4 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-indigo-400">SkillVoyager.AI</a>
+      <div class="flex gap-6">
+        <a href="trending.html" class="text-gray-400 hover:text-indigo-400">Trending</a>
+        <a href="store.html" class="text-gray-400 hover:text-indigo-400">Course Store</a>
+        <a href="login.html" class="text-gray-400 hover:text-indigo-400">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold text-center mb-4">Pricing & Plans</h1>
+    <p class="text-gray-400 text-center mb-14">Free roadmap + optional premium courses to accelerate your journey</p>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="rounded-2xl bg-gray-900/50 border border-gray-800 p-8">
+        <h2 class="text-xl font-semibold mb-2">Free</h2>
+        <p class="text-4xl font-bold mb-6">$0<span class="text-lg font-normal text-gray-500">/month</span></p>
+        <ul class="space-y-3 text-gray-400 mb-8">
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> AI skill gap analysis</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> Personalized roadmap</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> Progress tracking</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> AI quiz assessments</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> Free course recommendations</li>
+        </ul>
+        <a href="signup.html" class="block w-full py-3 border border-gray-600 hover:border-indigo-500 rounded-lg text-center font-medium transition">Get Started</a>
+      </div>
+      <div class="rounded-2xl bg-indigo-600/10 border-2 border-indigo-500 p-8 relative">
+        <span class="absolute -top-3 left-6 px-3 py-1 bg-indigo-600 rounded-full text-xs font-medium">Pro</span>
+        <h2 class="text-xl font-semibold mb-2">Premium</h2>
+        <p class="text-4xl font-bold mb-6">$19<span class="text-lg font-normal text-gray-400">/month</span></p>
+        <ul class="space-y-3 text-gray-400 mb-8">
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> Everything in Free</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> Access to premium paid courses</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> 1:1 AI mentoring sessions</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> Priority roadmap updates</li>
+          <li class="flex gap-2"><span class="text-emerald-500">✓</span> Certificate of completion</li>
+        </ul>
+        <a href="checkout.html?plan=premium" class="block w-full py-3 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-center font-medium transition">Subscribe</a>
+      </div>
+    </div>
+
+    <p class="text-center text-gray-500 text-sm mt-10">Or buy individual paid courses. <a href="store.html" class="text-indigo-400 hover:underline">Browse course store →</a></p>
+  </main>
+</body>
+</html>

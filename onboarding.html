@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Your Roadmap – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+  <nav class="bg-gray-900/90 border-b border-gray-800 py-4 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-indigo-400">SkillVoyager.AI</a>
+    </div>
+  </nav>
+
+  <main class="max-w-2xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-2">Set Up Your Learning Roadmap</h1>
+    <p class="text-gray-400 mb-10">Share your current skills and career goals so AI can personalize your journey.</p>
+
+    <form class="space-y-8">
+      <div class="rounded-xl bg-gray-900/50 border border-gray-800 p-6">
+        <label class="block text-lg font-semibold mb-4">Current Skills</label>
+        <input type="text" placeholder="e.g. HTML, CSS, JavaScript" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-100 placeholder-gray-500 focus:border-indigo-500 outline-none mb-2">
+        <p class="text-sm text-gray-500">Separate skills with commas. Be honest — AI will identify gaps.</p>
+      </div>
+
+      <div class="rounded-xl bg-gray-900/50 border border-gray-800 p-6">
+        <label class="block text-lg font-semibold mb-4">Career Goal</label>
+        <select class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-100 focus:border-indigo-500 outline-none">
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>Full-Stack Developer</option>
+          <option>Data Scientist</option>
+          <option>Cloud Engineer</option>
+          <option>DevOps Engineer</option>
+          <option>Mobile Developer</option>
+        </select>
+      </div>
+
+      <div class="rounded-xl bg-gray-900/50 border border-gray-800 p-6">
+        <label class="block text-lg font-semibold mb-4">Time per Week (approx)</label>
+        <select class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-100 focus:border-indigo-500 outline-none">
+          <option>5–10 hours</option>
+          <option>10–20 hours</option>
+          <option>20+ hours</option>
+        </select>
+      </div>
+
+      <button type="submit" class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-semibold text-lg transition">Generate My Roadmap</button>
+    </form>
+  </main>
+</body>
+</html>

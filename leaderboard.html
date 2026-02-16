@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+  <nav class="bg-gray-900/90 border-b border-gray-800 py-4 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-indigo-400">SkillVoyager.AI</a>
+      <div class="flex gap-6">
+        <a href="trending.html" class="text-gray-400 hover:text-indigo-400">Trending</a>
+        <a href="tips.html" class="text-gray-400 hover:text-indigo-400">Tips</a>
+        <a href="leaderboard.html" class="text-indigo-400">Leaderboard</a>
+        <a href="login.html" class="text-gray-400 hover:text-indigo-400">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-2">All Learners Leaderboard</h1>
+    <p class="text-gray-400 mb-10">Top learners by milestones, courses, and points</p>
+
+    <div class="rounded-xl bg-gray-900/50 border border-gray-800 overflow-hidden">
+      <table class="w-full">
+        <thead class="bg-gray-800/50">
+          <tr>
+            <th class="text-left py-4 px-6 font-medium">Rank</th>
+            <th class="text-left py-4 px-6 font-medium">Learner</th>
+            <th class="text-left py-4 px-6 font-medium">Milestones</th>
+            <th class="text-left py-4 px-6 font-medium">Courses</th>
+            <th class="text-left py-4 px-6 font-medium">Points</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          <tr class="hover:bg-gray-800/30">
+            <td class="py-4 px-6"><span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">1</span></td>
+            <td class="py-4 px-6 font-medium">Alex M.</td>
+            <td class="py-4 px-6 text-gray-400">42</td>
+            <td class="py-4 px-6 text-gray-400">12</td>
+            <td class="py-4 px-6 text-indigo-400 font-semibold">4,200</td>
+          </tr>
+          <tr class="hover:bg-gray-800/30">
+            <td class="py-4 px-6"><span class="w-8 h-8 rounded-full bg-gray-500/20 text-gray-400 flex items-center justify-center font-bold">2</span></td>
+            <td class="py-4 px-6 font-medium">Jordan K.</td>
+            <td class="py-4 px-6 text-gray-400">38</td>
+            <td class="py-4 px-6 text-gray-400">10</td>
+            <td class="py-4 px-6 text-indigo-400 font-semibold">3,800</td>
+          </tr>
+          <tr class="hover:bg-gray-800/30">
+            <td class="py-4 px-6"><span class="w-8 h-8 rounded-full bg-amber-700/20 text-amber-600 flex items-center justify-center font-bold">3</span></td>
+            <td class="py-4 px-6 font-medium">Sam R.</td>
+            <td class="py-4 px-6 text-gray-400">35</td>
+            <td class="py-4 px-6 text-gray-400">9</td>
+            <td class="py-4 px-6 text-indigo-400 font-semibold">3,500</td>
+          </tr>
+          <tr class="hover:bg-gray-800/30">
+            <td class="py-4 px-6"><span class="text-gray-500 font-bold">4</span></td>
+            <td class="py-4 px-6 font-medium">Casey L.</td>
+            <td class="py-4 px-6 text-gray-400">30</td>
+            <td class="py-4 px-6 text-gray-400">8</td>
+            <td class="py-4 px-6 text-indigo-400 font-semibold">3,000</td>
+          </tr>
+          <tr class="hover:bg-gray-800/30">
+            <td class="py-4 px-6"><span class="text-gray-500 font-bold">5</span></td>
+            <td class="py-4 px-6 font-medium">Taylor J.</td>
+            <td class="py-4 px-6 text-gray-400">28</td>
+            <td class="py-4 px-6 text-gray-400">7</td>
+            <td class="py-4 px-6 text-indigo-400 font-semibold">2,800</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
