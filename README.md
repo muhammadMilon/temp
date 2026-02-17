@@ -8,7 +8,7 @@
 
 | Role | Name | Focus | Task Details |
 |------|------|--------|--------------|
-| **Team Leader** | Muhammad Milon | Complex logic + AI | [→ Task Details](task-details/Muhammad-Milon.md) |
+| **Team Leader** | Milon | Complex logic + AI | [→ Task Details](task-details/Milon.md) |
 | **Member** | Nayem | AI features | [→ Task Details](task-details/Nayem.md) |
 | **Member** | Kona | AI features | [→ Task Details](task-details/Kona.md) |
 | **Member** | Kakoly | UI-heavy full features | [→ Task Details](task-details/Kakoly.md) |
@@ -39,7 +39,7 @@
 
 | Team Member | Task Details File |
 |-------------|-------------------|
-| **Muhammad Milon** | [task-details/Muhammad-Milon.md](task-details/Muhammad-Milon.md) |
+| **Milon** | [task-details/Muhammad-Milon.md](task-details/Milon.md) |
 | **Nayem** | [task-details/Nayem.md](task-details/Nayem.md) |
 | **Kona** | [task-details/Kona.md](task-details/Kona.md) |
 | **Kakoly** | [task-details/Kakoly.md](task-details/Kakoly.md) |
