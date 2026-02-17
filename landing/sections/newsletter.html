@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter - SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { DEFAULT: '#4f46e5' } } } } }</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../index.html" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">SkillVoyager.AI</a>
+        <div class="flex items-center gap-4">
+          <a href="features.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition hidden md:inline">Features</a>
+          <a href="how-it-works.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition hidden md:inline">How it works</a>
+          <a href="newsletter.html" class="text-indigo-600 dark:text-indigo-400 font-semibold hidden md:inline">Newsletter</a>
+          <a href="../../pages/auth/login.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Login</a>
+          <button id="themeToggle" type="button" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle theme"></button>
+          <a href="../../pages/auth/signup.html" class="px-4 py-2 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg font-medium">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-2 text-slate-900 dark:text-slate-100">Stay updated</h2>
+      <p class="text-slate-600 dark:text-slate-400 mb-6 text-center">Tips and product updates. No spam.</p>
+      <form class="flex flex-col sm:flex-row gap-2 justify-center max-w-md mx-auto">
+        <input type="email" placeholder="Your email" class="px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 flex-1">
+        <button type="submit" class="px-6 py-2.5 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition">Subscribe</button>
+      </form>
+    </div>
+  </main>
+  <footer class="py-8 px-4 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+    <p>SkillVoyager.AI</p>
+    <div class="mt-4 flex justify-center gap-6">
+      <a href="../../pages/marketing/about.html" class="hover:text-indigo-500 dark:hover:text-indigo-400">About</a>
+      <a href="faq.html" class="hover:text-indigo-500 dark:hover:text-indigo-400">FAQ</a>
+      <a href="../../pages/marketing/contact.html" class="hover:text-indigo-500 dark:hover:text-indigo-400">Contact</a>
+    </div>
+  </footer>
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { DEFAULT: '#4f46e5' } } } } }</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../../index.html" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">SkillVoyager.AI</a>
+        <button id="themeToggle" type="button" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle theme"></button>
+      </div>
+    </div>
+  </nav>
+  <div class="min-h-screen flex items-center justify-center py-24 px-4">
+    <div class="max-w-2xl w-full rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-xl p-8">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400">Let's Get Started!</h2>
+        <p class="text-slate-600 dark:text-slate-400 mt-2">Tell us about yourself to personalize your learning journey</p>
+      </div>
+      <div class="mb-8 flex justify-between items-center gap-2">
+        <div class="flex-1 h-1 rounded-full bg-indigo-600 dark:bg-indigo-500"></div>
+        <span class="px-3 text-indigo-600 dark:text-indigo-400 font-semibold text-sm">Step 1 of 3</span>
+        <div class="flex-1 h-1 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+      </div>
+      <form id="onboardingForm" class="space-y-6">
+        <div id="step1" class="step-content">
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">Basic Information</h3>
+          <div class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Current Role</label>
+              <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+                <option>Student</option>
+                <option>Fresh Graduate</option>
+                <option>Junior Developer</option>
+                <option>Mid-Level Professional</option>
+                <option>Senior Professional</option>
+                <option>Career Changer</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Education Level</label>
+              <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+                <option>High School</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>PhD</option>
+                <option>Self-Taught</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="step2" class="step-content hidden">
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">Your Current Skills</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Select all that apply</p>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-300"><input type="checkbox" class="rounded text-indigo-600 border-slate-300 dark:border-slate-600"> HTML/CSS</label>
+            <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-300"><input type="checkbox" class="rounded text-indigo-600 border-slate-300 dark:border-slate-600"> JavaScript</label>
+            <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-300"><input type="checkbox" class="rounded text-indigo-600 border-slate-300 dark:border-slate-600"> React</label>
+            <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-300"><input type="checkbox" class="rounded text-indigo-600 border-slate-300 dark:border-slate-600"> Node.js</label>
+            <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-300"><input type="checkbox" class="rounded text-indigo-600 border-slate-300 dark:border-slate-600"> Python</label>
+            <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-300"><input type="checkbox" class="rounded text-indigo-600 border-slate-300 dark:border-slate-600"> Data Science</label>
+          </div>
+        </div>
+        <div id="step3" class="step-content hidden">
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">Your Career Goals</h3>
+          <div class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Target Career Path</label>
+              <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+                <option>Full Stack Developer</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Data Scientist</option>
+                <option>AI/ML Engineer</option>
+                <option>DevOps Engineer</option>
+                <option>Mobile Developer</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Timeline</label>
+              <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+                <option>3 months</option>
+                <option>6 months</option>
+                <option>1 year</option>
+                <option>2+ years</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between pt-6">
+          <button type="button" id="prevBtn" class="px-6 py-2.5 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hidden">Previous</button>
+          <div class="ml-auto flex gap-3">
+            <button type="button" id="nextBtn" class="px-6 py-2.5 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 dark:hover:bg-indigo-600 font-semibold">Next</button>
+            <button type="submit" id="submitBtn" class="px-6 py-2.5 bg-emerald-600 dark:bg-emerald-500 text-white rounded-lg hover:bg-emerald-700 dark:hover:bg-emerald-600 font-semibold hidden">Complete Setup</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { DEFAULT: '#4f46e5' } } } } }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../../index.html" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">SkillVoyager.AI</a>
+        <div class="flex items-center gap-4">
+          <div class="hidden md:flex gap-6">
+            <a href="dashboard.html" class="text-indigo-600 dark:text-indigo-400 font-semibold">Dashboard</a>
+            <a href="../roadmaps/my-roadmaps.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">My Roadmaps</a>
+            <a href="../courses/courses.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Courses</a>
+            <a href="../community/leaderboard.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Leaderboard</a>
+            <a href="../account/profile.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Profile</a>
+          </div>
+          <button id="themeToggle" type="button" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle theme"></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+    <div class="rounded-2xl bg-gradient-to-r from-indigo-600 to-indigo-800 dark:from-indigo-700 dark:to-indigo-900 text-white p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-2">Welcome back, <span id="userName">Learner</span>!</h2>
+      <p class="text-indigo-100 text-lg">Continue your learning journey today.</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6 mb-8">
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+        <div class="text-3xl mb-2">📚</div>
+        <p class="text-slate-600 dark:text-slate-400 text-sm">Active Roadmaps</p>
+        <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">3</p>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+        <div class="text-3xl mb-2">✅</div>
+        <p class="text-slate-600 dark:text-slate-400 text-sm">Completed Milestones</p>
+        <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">12</p>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+        <div class="text-3xl mb-2">🎯</div>
+        <p class="text-slate-600 dark:text-slate-400 text-sm">Skills Acquired</p>
+        <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">8</p>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+        <div class="text-3xl mb-2">🏆</div>
+        <p class="text-slate-600 dark:text-slate-400 text-sm">Leaderboard Rank</p>
+        <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">#42</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+        <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">Quick Actions</h3>
+        <div class="space-y-3">
+          <a href="../skills/skill-gap.html" class="block text-center py-3 rounded-lg bg-indigo-600 dark:bg-indigo-500 text-white hover:bg-indigo-700 dark:hover:bg-indigo-600 font-medium transition">🎯 Start Skill Gap Analysis</a>
+          <a href="../roadmaps/roadmap-generator.html" class="block text-center py-3 rounded-lg bg-emerald-600 dark:bg-emerald-500 text-white hover:bg-emerald-700 dark:hover:bg-emerald-600 font-medium transition">🗺️ Generate New Roadmap</a>
+          <a href="../skills/quiz.html" class="block text-center py-3 rounded-lg bg-violet-600 dark:bg-violet-500 text-white hover:bg-violet-700 dark:hover:bg-violet-600 font-medium transition">📝 Take Skill Assessment</a>
+        </div>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+        <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">Current Progress</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between mb-1 text-sm">
+              <span class="font-medium text-slate-700 dark:text-slate-300">Full Stack Development</span>
+              <span class="text-slate-600 dark:text-slate-400">65%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+              <div class="h-2 rounded-full bg-indigo-600 dark:bg-indigo-500" style="width: 65%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1 text-sm">
+              <span class="font-medium text-slate-700 dark:text-slate-300">Data Science</span>
+              <span class="text-slate-600 dark:text-slate-400">40%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+              <div class="h-2 rounded-full bg-emerald-600 dark:bg-emerald-500" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+      <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">AI-Recommended Courses</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="../courses/course-detail.html" class="rounded-lg border border-slate-200 dark:border-slate-700 p-4 hover:border-indigo-500 dark:hover:border-indigo-400 transition">
+          <h4 class="font-semibold mb-2 text-slate-900 dark:text-slate-100">Advanced React Patterns</h4>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Master advanced React concepts.</p>
+          <span class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">View Course →</span>
+        </a>
+        <a href="../courses/course-detail.html" class="rounded-lg border border-slate-200 dark:border-slate-700 p-4 hover:border-indigo-500 dark:hover:border-indigo-400 transition">
+          <h4 class="font-semibold mb-2 text-slate-900 dark:text-slate-100">Node.js Backend Development</h4>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Build scalable APIs.</p>
+          <span class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">View Course →</span>
+        </a>
+        <a href="../courses/course-detail.html" class="rounded-lg border border-slate-200 dark:border-slate-700 p-4 hover:border-indigo-500 dark:hover:border-indigo-400 transition">
+          <h4 class="font-semibold mb-2 text-slate-900 dark:text-slate-100">MongoDB Mastery</h4>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Database design & optimization.</p>
+          <span class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">View Course →</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-6 px-4 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+    <p>SkillVoyager.AI – Your AI-Powered Learning Journey</p>
+  </footer>
+
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

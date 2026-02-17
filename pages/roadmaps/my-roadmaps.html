@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Roadmaps – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { DEFAULT: '#4f46e5' } } } } }</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../../index.html" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">SkillVoyager.AI</a>
+        <div class="flex items-center gap-4">
+          <div class="hidden md:flex gap-6">
+            <a href="../dashboard/dashboard.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Dashboard</a>
+            <a href="my-roadmaps.html" class="text-indigo-600 dark:text-indigo-400 font-semibold">My Roadmaps</a>
+            <a href="../courses/courses.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Courses</a>
+            <a href="../community/leaderboard.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Leaderboard</a>
+            <a href="../account/profile.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Profile</a>
+          </div>
+          <button id="themeToggle" type="button" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle theme"></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+      <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">My Roadmaps</h1>
+      <a href="roadmap-generator.html" class="px-4 py-2.5 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 dark:hover:bg-indigo-600 font-medium transition">+ New Roadmap</a>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <a href="roadmap.html" class="block rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 hover:border-indigo-500 dark:hover:border-indigo-400 transition shadow-sm">
+        <div class="flex items-start justify-between mb-4">
+          <span class="text-3xl">🗺️</span>
+          <span class="text-sm font-medium text-emerald-600 dark:text-emerald-400">Active</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Full Stack Developer</h3>
+        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">6-month journey • 35% complete</p>
+        <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+          <div class="h-2 rounded-full bg-indigo-600 dark:bg-indigo-500" style="width: 35%"></div>
+        </div>
+      </a>
+      <a href="roadmap.html" class="block rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-6 hover:border-indigo-500 dark:hover:border-indigo-400 transition shadow-sm">
+        <div class="flex items-start justify-between mb-4">
+          <span class="text-3xl">📊</span>
+          <span class="text-sm font-medium text-slate-500 dark:text-slate-400">In progress</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Data Science</h3>
+        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">1-year path • 18% complete</p>
+        <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+          <div class="h-2 rounded-full bg-emerald-600 dark:bg-emerald-500" style="width: 18%"></div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="py-6 px-4 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+    <p>SkillVoyager.AI – Your AI-Powered Learning Journey</p>
+  </footer>
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

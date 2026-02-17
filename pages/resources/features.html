@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features – SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { DEFAULT: '#4f46e5' } } } } }</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../../index.html" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">SkillVoyager.AI</a>
+        <div class="flex items-center gap-4">
+          <div class="hidden md:flex gap-6">
+            <a href="../community/trending-skills.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Trending</a>
+            <a href="learning-tips.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Tips</a>
+            <a href="../marketing/about.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
+            <a href="../community/leaderboard.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Leaderboard</a>
+            <a href="features.html" class="text-indigo-600 dark:text-indigo-400 font-semibold">Features</a>
+            <a href="../auth/login.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Login</a>
+          </div>
+          <button id="themeToggle" type="button" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle theme"></button>
+          <a href="../auth/signup.html" class="px-4 py-2 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg font-medium hidden md:inline-block">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+    <h1 class="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4 text-center">Powerful Features</h1>
+    <p class="text-xl text-slate-600 dark:text-slate-400 mb-12 text-center">Everything you need for your learning journey</p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+        <div class="text-5xl mb-4">🎯</div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">AI Skill Gap Analysis</h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Our AI analyzes your current skills and compares them with your target role to identify exactly what you need to learn.</p>
+        <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+          <li>✓ Comprehensive skill assessment</li>
+          <li>✓ Industry-standard benchmarking</li>
+          <li>✓ Personalized recommendations</li>
+        </ul>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+        <div class="text-5xl mb-4">🗺️</div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Personalized Roadmaps</h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Get step-by-step learning paths tailored to your goals, timeline, and learning style.</p>
+        <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+          <li>✓ Career-aligned milestones</li>
+          <li>✓ Flexible timelines</li>
+          <li>✓ Adaptive learning paths</li>
+        </ul>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+        <div class="text-5xl mb-4">📚</div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">AI Course Recommendations</h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Discover the best courses and resources matched to your learning path.</p>
+        <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+          <li>✓ Curated course library</li>
+          <li>✓ Quality-rated content</li>
+          <li>✓ Multi-format learning</li>
+        </ul>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+        <div class="text-5xl mb-4">📊</div>
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Progress Tracking</h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Monitor completed milestones, remaining tasks, and predicted roadmap timeframes.</p>
+        <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+          <li>✓ Dashboard analytics</li>
+          <li>✓ Milestone completion</li>
+          <li>✓ Time estimates</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="py-6 px-4 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+    <p>SkillVoyager.AI</p>
+  </footer>
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

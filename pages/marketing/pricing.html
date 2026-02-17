@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - SkillVoyager.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { DEFAULT: '#4f46e5' } } } } }</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../../index.html" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">SkillVoyager.AI</a>
+        <div class="flex items-center gap-4">
+          <div class="hidden md:flex gap-6">
+            <a href="../community/trending-skills.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Trending</a>
+            <a href="../resources/learning-tips.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Tips</a>
+            <a href="about.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
+            <a href="faq.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">FAQ</a>
+            <a href="pricing.html" class="text-indigo-600 dark:text-indigo-400 font-semibold">Pricing</a>
+            <a href="../auth/login.html" class="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Login</a>
+          </div>
+          <button id="themeToggle" type="button" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle theme"></button>
+          <a href="../auth/signup.html" class="px-4 py-2 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg font-medium hidden md:inline-block">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+    <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-8 text-center">Pricing</h1>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Free</h3>
+        <p class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">$0 per month</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-6">1 roadmap, basic skill gap, leaderboard.</p>
+        <a href="../auth/signup.html" class="block text-center py-3 border border-slate-300 dark:border-slate-600 rounded-lg font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition">Get started</a>
+      </div>
+      <div class="rounded-xl bg-white dark:bg-slate-900/80 border-2 border-indigo-500 dark:border-indigo-400 p-8 shadow-sm">
+        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Pro</h3>
+        <p class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">$12 per month</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-6">Unlimited roadmaps, AI quizzes, analytics.</p>
+        <a href="../auth/signup.html" class="block text-center py-3 bg-indigo-600 dark:bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-700 dark:hover:bg-indigo-600 transition">Start trial</a>
+      </div>
+    </div>
+  </main>
+  <footer class="py-6 px-4 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+    <p>SkillVoyager.AI</p>
+  </footer>
+  <script src="../../js/theme.js"></script>
+</body>
+</html>
